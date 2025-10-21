@@ -1,0 +1,199 @@
+@use "../base/variables.scss" as *;
+
+.footer {
+  background-color: #232323;
+  color: #fafafa;
+  padding: 60px 40px 30px;
+  font-family: "Barlow", sans-serif;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  &__newsletter {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .footer__title {
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+
+    .footer__subtitle {
+      font-weight: 400;
+      font-size: 14px;
+      max-width: 292px;
+      color: #ccc;
+    }
+
+    .footer__input {
+      max-width: 260px;
+      width: 100%;
+      padding-bottom: 10px;
+      border: none;
+      border-bottom: 1px solid #fafafa;
+      background: transparent;
+      color: #fafafa;
+
+      &::placeholder {
+        color: $ui-active;
+      }
+    }
+
+    .footer__input--error {
+      border-bottom: 1px solid $ui-error;
+    }
+
+    .footer__input--error::placeholder {
+      color: $ui-error !important;
+    }
+
+    .footer__checkbox--error {
+      border: 1px solid $ui-error !important;
+    }
+
+    .footer__form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: -1.75rem;
+    }
+
+    .btn-footer {
+      margin-top: 10px;
+      padding: 10px 20px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #b5896b;
+      }
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      font-size: 14px;
+      line-height: 1.2;
+      background-color: #232323;
+
+      .footer__checkbox {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        background-color: #232323;
+        border: 1px solid #fafafa;
+      }
+
+      .footer__checkbox:checked {
+        background-color: #232323;
+      }
+
+      .footer__checkbox:checked::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        width: 4px;
+        height: 8px;
+        border: solid #fafafa;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+
+      .footer__checkbox-label {
+        margin: 10px;
+
+        a {
+          color: #a22dc6;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__general {
+    flex: 1;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+
+    .footer__links {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .footer__subtitle-small {
+        max-width: none;
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin-bottom: 6px;
+        }
+      }
+
+      .footer__link {
+        color: #fafafa;
+        font-size: 14px;
+        text-decoration: none;
+
+        &:hover {
+          color: #c69978;
+        }
+      }
+    }
+  }
+
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer__social-title {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .footer__icons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .copyright {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    width: 100%;
+  }
+}
