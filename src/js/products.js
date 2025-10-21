@@ -1,3 +1,5 @@
+import "/src/sass/style.scss";
+
 const API_BASE = "https://ceramic-api.onrender.com";
 
 function productToHTML(p) {

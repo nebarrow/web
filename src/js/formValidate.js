@@ -1,3 +1,5 @@
+import "/src/sass/style.scss";
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.form__request-fields');
   if (!form) return;

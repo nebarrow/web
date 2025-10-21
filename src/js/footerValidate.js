@@ -1,3 +1,5 @@
+import "/src/sass/style.scss";
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#footer__form');
   const emailInput = document.querySelector('#footer__email');
