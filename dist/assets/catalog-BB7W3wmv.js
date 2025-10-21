@@ -1,4 +1,4 @@
-import"./footerValidate-BTKmC1mw.js";const o="https://ceramic-api.onrender.com";function n(t){return`
+import"./footerValidate-FGrSHV9H.js";const o="https://ceramic-api.onrender.com";function n(t){return`
     <article class="catalog__item">
       <img src="${new URL(t.image,o)}" alt="${t.title}" loading="lazy">
       <div class="catalog__item-info">
