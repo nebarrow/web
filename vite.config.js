@@ -3,7 +3,7 @@ import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
-  base: "./",
+  base: "/web/",
   build: {
     rollupOptions: {
       input: {
