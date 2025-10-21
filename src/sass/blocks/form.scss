@@ -1,0 +1,254 @@
+@use "../base/variables.scss" as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  gap: 40px;
+
+  &__title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .form__request-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+    width: 100%;
+  }
+
+  .form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .form__row--double {
+    display: contents;
+  }
+
+  .form__row:nth-of-type(2) {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .form__textarea {
+      width: 100%;
+      min-height: 100px;
+      resize: vertical;
+    }
+  }
+
+  .form__row--consent {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .form__consent {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .form__row--action {
+    grid-column: 1 / -1;
+    display: contents;
+  }
+
+  .form__row--action .form__btn {
+    grid-column: 1;
+    justify-self: start;
+    align-self: end;
+    margin: 0;
+  }
+
+  .form__row--action .form__logo {
+    grid-column: 2;
+    justify-self: end;
+    align-self: end;
+    margin: 0;
+
+    img {
+      max-width: 85px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .form__input,
+  .form__textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .form__checkbox-label a {
+    color: #a22dc6;
+    text-decoration: none;
+  }
+
+  .form__checkbox {
+    vertical-align: middle;
+  }
+
+  .form__checkbox-label {
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .form__input--error {
+    border: 1px solid $ui-error !important;
+    color: $ui-error !important;
+  }
+
+  .footer__checkbox--error {
+    border: 1px solid $ui-error !important;
+  }
+
+  @media (max-width: 2500px) {
+    &__wrapper {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    &__image {
+      flex: 0 0 380px;
+    }
+
+    &__fields {
+      flex: 0 0 500px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__wrapper {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .form__request-fields {
+      grid-template-columns: 1fr;
+    }
+
+    .form__row--consent {
+      grid-column: 1;
+    }
+
+    .form__row--action {
+      grid-column: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 12px;
+    }
+    .form__row--action .form__btn {
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: start;
+      margin: 0;
+    }
+    .form__row--action .form__logo {
+      grid-column: 2;
+      justify-self: end;
+      align-self: end;
+      margin: 0;
+
+      img {
+        max-width: 85px;
+        height: auto;
+        display: block;
+      }
+    }
+
+    &__image {
+      flex: 0 0 380px;
+    }
+    &__fields {
+      flex: 0 0 500px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .form__request-fields {
+      grid-template-columns: 1fr;
+    }
+
+    .form__image {
+      display: none;
+    }
+
+    .form__row--action {
+      grid-column: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 12px;
+    }
+    .form__row--action .form__btn {
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: start;
+    }
+    .form__row--action .form__logo {
+      grid-column: 2;
+      justify-self: end;
+      align-self: end;
+      margin: 0;
+
+      img {
+        max-width: 85px;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}
