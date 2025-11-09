@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website for Ceramic Soul brand" />
+    <meta name="author" content="Awesome student" />
+    <title>Ceramic soul</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+  <body>
+    <section class="catalog">
+      <header class="header">
+        <div class="header__left">
+          <a href="index.html" class="header__logo">
+            <img src="/src/logo/logo.png" alt="logo" />
+          </a>
+          <div class="burger"><span></span><span></span><span></span></div>
+          <div class="close-menu">×</div>
+          <nav class="header__nav">
+            <a href="catalog.html">Catalog</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+
+        <div class="header__icons">
+          <a href="#"><span class="icon-search"></span></a>
+          <a href="#"><span class="icon-shopping-bag"></span></a>
+        </div>
+
+        <nav class="menu">
+          <ul class="menu__items">
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <h2 class="catalog__title">Our pottery</h2>
+
+      <div class="catalog__type">
+        <button class="catalog__types active">For Tea</button>
+        <button class="catalog__types">For Kitchen</button>
+        <button class="catalog__types">For Plants</button>
+      </div>
+
+      <div class="catalog__description">
+        <div class="catalog__container">
+          <div class="catalog__item">
+            <img src="/src/img/catalog/tea-3057645_1280 1.png" alt="item1" />
+            <div class="catalog__item-info">
+              <h3 class="catalog__item-title">Terracotta Whisper</h3>
+              <p class="catalog__item-price">19.99 €</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <section>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__newsletter">
+            <h4 class="footer__title">Newsletter</h4>
+            <h6 class="footer__subtitle">
+              Keep up to date with news and promotions
+            </h6>
+
+            <form class="footer__form" id="footer__form">
+              <input
+                id="footer__email"
+                type="email"
+                class="footer__input"
+                placeholder="Enter your e-mail"
+              />
+
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="footer__consent"
+                  class="footer__checkbox"
+                />
+                <label for="footer__consent" class="footer__checkbox-label">
+                  I agree with the <a href="#" class="footer__link">terms</a>
+                </label>
+              </div>
+
+              <button type="submit" class="btn-footer">Submit</button>
+            </form>
+          </div>
+          <div class="footer__general">
+            <div class="footer__links">
+              <h4 class="footer__subtitle-small">Discover</h4>
+              <ul>
+                <li><a href="#" class="footer__link">About Us</a></li>
+                <li><a href="#" class="footer__link">Blog</a></li>
+              </ul>
+            </div>
+            <div class="footer__links">
+              <h4 class="footer__subtitle-small">Shopping</h4>
+              <ul>
+                <li><a href="#" class="footer__link">Catalog</a></li>
+              </ul>
+            </div>
+            <div class="footer__links">
+              <h4 class="footer__subtitle-small">Information</h4>
+              <ul>
+                <li>
+                  <a href="#" class="footer__link">Terms and Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__social">
+            <span class="footer__social-title">Follow us</span>
+            <div class="footer__icons">
+              <a href="#"><img src="src/logo/facebook.png" alt="facebook" /></a>
+              <a href="#"
+                ><img src="src/logo/instagram.png" alt="instagram"
+              /></a>
+              <a href="#"
+                ><img src="src/logo/pinterest.png" alt="pinterest"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">© Copyright 2025, Ceramic soul</div>
+      </footer>
+    </section>
+    <script type="module" src="src/js/footerValidate.js"></script>
+    <script type="module" src="src/js/products.js"></script>
+    <script type="module" src="src/js/script.js"></script>
+  </body>
+</html>

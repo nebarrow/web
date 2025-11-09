@@ -1,10 +1,18 @@
-@use "/src/sass/libs/modern-normalize.min.css";
-@use "/src/sass/libs/fontello.css";
-@use "/src/sass/base/basic.scss";
+@use "../sass/libs/modern-normalize.min.css";
+@use "../sass/libs/fontello.css";
+@use "../sass/base/basic.scss";
 
-@use "/src/sass/blocks/header.scss";
+@use "../sass/blocks/header.scss";
 
-@use "/src/sass/ui/titles.scss";
-@use "/src/sass/ui/buttons.scss";
+@use "../sass/ui/titles.scss";
+@use "../sass/ui/buttons.scss";
 
-@use "/src/sass/blocks/promo.scss";
+@use "../sass/blocks/promo.scss";
+@use "../sass/blocks/about.scss";
+@use "../sass/blocks/form.scss";
+@use "../sass/blocks/portfolio.scss";
+@use "../sass/blocks/footer.scss";
+@use "../sass/blocks/catalog.scss";
+@use "../sass/blocks/blog.scss";
+@use "../sass/blocks/info.scss";
+@use "../sass/blocks/find.scss";

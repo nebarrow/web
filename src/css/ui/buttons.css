@@ -1,0 +1,36 @@
+.btn-default {
+  display: block;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid #232323;
+  text-align: center;
+  color: #232323;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 230px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.btn-footer {
+  display: block;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid #232323;
+  text-align: center;
+  color: #232323;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 90px;
+  height: 40px;
+  font-size: 16px;
+  color: #FAFAFA;
+  transform: uppercase;
+  border: 1px solid #FAFAFA;
+}
+
+/*# sourceMappingURL=buttons.css.map */

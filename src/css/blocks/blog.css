@@ -1,0 +1,126 @@
+.blog {
+  padding: 60px 20px;
+  background-color: #fdfdfd;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+}
+.blog__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #333;
+}
+.blog__container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 25px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.blog__description {
+  position: relative;
+}
+.blog__item {
+  position: relative;
+}
+.blog__item:first-child:before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 200px;
+  top: -5%;
+  left: -5%;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+.blog__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #232323;
+  max-width: 520px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease;
+}
+.blog__item:hover {
+  transform: translateY(-5px);
+}
+.blog__item-top {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  align-items: stretch;
+}
+.blog__item-top img {
+  max-width: 260px;
+  min-height: 240px;
+  display: block;
+  flex-shrink: 0;
+}
+.blog__item-info {
+  padding: 20px 20px 0.25rem 0.75rem;
+  max-width: 20.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.blog__item-name {
+  display: block;
+  margin-bottom: 12px;
+}
+.blog__item-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #232323;
+  margin: 0;
+}
+.blog__item-read {
+  align-self: flex-start;
+  margin-top: auto;
+  text-transform: uppercase;
+  min-width: 145px;
+  background-color: #fff;
+  color: #232323;
+  border: 1px solid #232323;
+  padding: 6px 12px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.blog__item-content {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 20px 25px 20px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+@media (max-width: 360px) {
+  .blog__title {
+    font-size: 32px;
+  }
+  .blog__item:first-child:before {
+    display: none;
+  }
+  .blog__item {
+    max-width: 340px;
+  }
+  .blog__item-read {
+    max-width: 145px;
+    margin-left: 0.75rem;
+  }
+  .blog__item-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blog__item-top img {
+    min-width: 340px;
+  }
+  .blog__item-title {
+    padding-left: 0.75rem;
+  }
+}
+
+/*# sourceMappingURL=blog.css.map */
